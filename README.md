@@ -51,8 +51,8 @@ Contoh output laporan yang dihasilkan oleh program — berguna sebagai referensi
 
 Daftar dependensi Python yang dibutuhkan oleh proyek (paket pihak ketiga). Instal dengan `pip install -r requirements.txt`.
 
-  Catatan: README juga menekankan agar direktori virtual environment (`.venv`, 
-  `venv`) dan `__pycache__` diabaikan dalam repo (tambahkan ke `.gitignore`).
+  > Catatan: README juga menekankan agar direktori virtual environment (`.venv`, 
+  > `venv`) dan `__pycache__` diabaikan dalam repo (tambahkan ke `.gitignore`).
 
 ## Cara menjalankan (ringkasan)
 
