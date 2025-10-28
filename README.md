@@ -19,35 +19,35 @@ Proyek ini adalah aplikasi sederhana untuk melacak dan merekap penilaian mahasis
 ## Penjelasan file dan cara kerja kode
 Untuk setiap file kode (ringkasan):
 
-`student_performance_tracker/tracker/__main__.py`
+ > `student_performance_tracker/tracker/__main__.py`
 
 Modul berisi fungsi yang mengikat komponen-komponen utama dan menyediakan entry point yang dapat dijalankan langsung. Terdapat blok `if __name__ == "__main__"` untuk menjalankan aplikasi secara langsung.
 
-`student_performance_tracker/tracker/mahasiswa.py`
+ > `student_performance_tracker/tracker/mahasiswa.py`
 
 Modul ini berisi definisi kelas yang merepresentasikan entitas mahasiswa (mis. atribut: NIM, nama). Kelas ini kemungkinan menyediakan method untuk menampilkan atau memformat info mahasiswa.
 
-`student_performance_tracker/tracker/penilaian.py`
+ > `student_performance_tracker/tracker/penilaian.py`
 
 Berisi class / fungsi yang menangani entitas penilaian—menyimpan nilai, mata-kuliah, bobot, dan operasi terkait (mis. validasi nilai, agregasi).
 
-`student_performance_tracker/tracker/rekap_kelas.py`
+ > `student_performance_tracker/tracker/rekap_kelas.py`
 
 Modul untuk merekap data kelas: menghitung rata-rata, distribusi nilai, menghitung jumlah lulus/gagal, dan menyusun rekap per-kelas atau per-mata-kuliah.
 
-`student_performance_tracker/tracker/report.py`
+ > `student_performance_tracker/tracker/report.py`
 
 Bertugas membuat laporan akhir (mis. Markdown/HTML/text) dari hasil rekap; kemungkinan menulis ke folder `out/` seperti `out/report.md`.
 
-`student_performance_tracker/app.py`
+ > `student_performance_tracker/app.py`
 
 File titik masuk (entry script) tingkat atas yang memanggil modul tracker, memuat konfigurasi, dan menjalankan proses penuh (load data → proses → generate report).
 
-`student_performance_tracker/out/report.md`
+ > `student_performance_tracker/out/report.md`
 
 Contoh output laporan yang dihasilkan oleh program — berguna sebagai referensi format output.
 
-`student_performance_tracker/requirements.txt`
+ > `student_performance_tracker/requirements.txt`
 
 Daftar dependensi Python yang dibutuhkan oleh proyek (paket pihak ketiga). Instal dengan `pip install -r requirements.txt`.
 
